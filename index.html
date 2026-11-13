@@ -30,7 +30,7 @@
             width: 100%;
             height: 100%;
             opacity: 0.2;
-            background-image: 
+            background-image:
                 url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><path d="M10,50 Q25,40 40,50 T70,50" stroke="white" fill="none" stroke-width="1"/><path d="M5,35 Q25,25 45,35 T85,35" stroke="white" fill="none" stroke-width="1"/><path d="M15,65 Q30,55 50,65 T80,65" stroke="white" fill="none" stroke-width="1"/><path d="M0,20 Q20,10 40,20 T80,20" stroke="white" fill="none" stroke-width="1"/><path d="M8,80 Q28,70 48,80 T88,80" stroke="white" fill="none" stroke-width="1"/></svg>');
             background-repeat: repeat;
             pointer-events: none;
@@ -332,7 +332,6 @@
             <div class="location-info">Galveston, TX</div>
         </div>
     </div>
-
     <nav>
         <a href="#home">Home</a>
         <a href="#about">About</a>
@@ -340,7 +339,6 @@
         <a href="#resume">Resume</a>
         <a href="#contact">Contact</a>
     </nav>
-
     <div class="container">
         <section id="about">
             <h2>About Me</h2>
@@ -348,27 +346,30 @@
                 <p>I am a senior Geographic Information Science and Technology (GIST) major at Texas A&M University with a lifelong passion for geography. Having found the perfect intersection of my interests in this major, my career goal is to transition into a GIS and Image Analyst role within a federal agency upon graduation.</p>
             </div>
         </section>
-
         <section id="projects">
             <h2>Projects</h2>
             <div class="projects-grid">
+                <!-- Aggie Buses Project -->
                 <div class="project">
                     <div class="project-header">
                         <h3>Analyzing Aggie Buses</h3>
                     </div>
                     <div class="project-content">
                         <p class="project-summary">GIS analysis of Texas A&M bus system efficiency and route performance</p>
-                        
                         <div class="detail-section">
                             <div class="detail-label">Problem</div>
                             <div class="detail-text">Texas A&M recently implemented a new centralized bus system with routes designed around Simpson Drill Field. Students complained about inefficient routes and inaccurate bus ETAs, leading to delays and inconveniences.</div>
                         </div>
-
                         <div class="detail-section">
                             <div class="detail-label">What I Did</div>
                             <div class="detail-text">I analyzed seven bus routes by comparing estimated times of arrival from the Aggie Transportation schedule against actual time stamps recorded at each stop. I tracked bus capacity from stop to stop and documented both arrival and departure times to identify problem areas around campus.</div>
                         </div>
-
+                        <div class="detail-section">
+                            <div class="detail-label">Tools and Data</div>
+                            <div class="detail-text">
+                                This project used <strong>ArcGIS</strong> for spatial analysis. The data came from analyzing the Aggie Transportation bus tracker logs. ArcGIS was chosen for its robust mapping and spatial analysis capabilities, which allowed for effective visualization and comparison of the actual and scheduled bus routes.
+                            </div>
+                        </div>
                         <div class="detail-section">
                             <div class="detail-label">What I Found</div>
                             <div class="stats-box">
@@ -384,87 +385,97 @@
                             <p style="margin-top: 15px; color: #d0d0d0;">Only about 40% of buses arrived on time according to the Aggie Transportation schedule. Nearly 60% of buses were not where they were supposed to be, with bus route 04 showing only 41% on-time arrivals. Drivers were not accurately tracking bus capacity, creating wait times of 15-20 minutes.</p>
                             <p style="margin-top: 15px; color: #d0d0d0;"><strong>Legend:</strong> Green = On Time | Yellow = Late/Left Early | Red = Arrived & Left Before ETA</p>
                         </div>
-
                         <div class="detail-section">
                             <div class="detail-label">Research Poster</div>
-                            <img src="GNSSFinalPoster7.jpg" alt="GNSS Research Poster - Analyzing Aggie Buses" class="poster-image">
+                            <img src="GNSSFinalPoster7.jpg" alt="Research poster displaying Aggie bus route efficiency using ArcGIS. Map legend uses green, yellow, and red to indicate performance." class="poster-image">
                         </div>
-
+                        <div class="map-embed">
+                            <p style="color: #a0a0a0; margin-top: 8px;">
+                                This map illustrates the comparative efficiency of Aggie bus routes, showing on-time percentages and problematic areas as analyzed in ArcGIS. A colorblind-safe palette is recommended for accessibility in map visualizations.
+                            </p>
+                        </div>
                         <div class="detail-section">
                             <div class="detail-label">What I Would Do Differently</div>
-                            <div class="detail-text">I would change the color of the map legend so that it was more accessible for those that are color blind.</div>
+                            <div class="detail-text">I would change the color of the map legend so that it was more accessible for those that are color blind, using a colorblind-safe palette.</div>
                         </div>
                     </div>
                 </div>
-
+                <!-- Amsterdam Project -->
                 <div class="project">
                     <div class="project-header">
                         <h3>Amsterdam Bicycle Infrastructure</h3>
                     </div>
                     <div class="project-content">
                         <p class="project-summary">GIS analysis of bike lanes and vehicular routes in Amsterdam</p>
-
                         <div class="detail-section">
                             <div class="detail-label">Problem</div>
                             <div class="detail-text">Differentiate the bike and vehicular lanes in Amsterdam</div>
                         </div>
-
                         <div class="detail-section">
                             <div class="detail-label">What I Did</div>
                             <div class="detail-text">I cleaned the dataset and created groups that showed bike-only lanes, bike and moped lanes, bike priority roads, and shared roads with other vehicles.</div>
                         </div>
-
+                        <div class="detail-section">
+                            <div class="detail-label">Tools and Data</div>
+                            <div class="detail-text">
+                                This project used <strong>ArcGIS</strong> for mapping and spatial analysis. The data was sourced from <strong>OpenStreetMap</strong> and a dataset from <strong>NextGIS</strong>. ArcGIS was selected because it makes it easy to visualize complex infrastructure networks and supports open datasets.
+                            </div>
+                        </div>
                         <div class="detail-section">
                             <div class="detail-label">What I Found</div>
-                            <div class="detail-text">Amsterdam truly prioritizes bikes as most of thier roads are bike friendly. Their infrastructure does not cater to vehicles like the United States does.</div>
+                            <div class="detail-text">Amsterdam truly prioritizes bikes as most of their roads are bike friendly. Their infrastructure does not cater to vehicles like the United States does.</div>
                         </div>
-
                         <div class="detail-section">
                             <div class="detail-label">What I Would Do Differently</div>
                             <div class="detail-text">I think I should have clipped the layers a little further out. Instead, I kept just the innermost part of the city.</div>
                         </div>
-
                         <div class="map-embed">
                             <arcgis-embedded-map style="height:350px;width:100%;" item-id="e204d5dd1146407e8c419065954ace90" theme="dark" heading-enabled legend-enabled time-zone-label-enabled center="4.925950945854357,52.3733075644399" scale="144447.638572" portal-url="https://tamu.maps.arcgis.com"></arcgis-embedded-map>
+                            <p style="color: #a0a0a0; margin-top: 8px;">
+                                This interactive map visualizes bicycle infrastructure in Amsterdam, highlighting bike-only lanes, shared lanes, and priority routes using data from OpenStreetMap and NextGIS.
+                            </p>
                         </div>
                     </div>
                 </div>
-
+                <!-- US Energy Usage Project -->
                 <div class="project">
                     <div class="project-header">
                         <h3>US Energy Usage</h3>
                     </div>
                     <div class="project-content">
                         <p class="project-summary">County-level analysis of residential energy consumption by state</p>
-
                         <div class="detail-section">
                             <div class="detail-label">Problem</div>
                             <div class="detail-text">Visualize which parts of the United States use the most energy to heat and cool their houses</div>
                         </div>
-
                         <div class="detail-section">
                             <div class="detail-label">What I Did</div>
                             <div class="detail-text">I created a map that shows the average amount of energy being used to heat and cool houses in each county.</div>
                         </div>
-
+                        <div class="detail-section">
+                            <div class="detail-label">Tools and Data</div>
+                            <div class="detail-text">
+                                This project used <strong>ArcGIS</strong> to map and analyze spatial data. The data was obtained from the <strong>US Bureau of Labor Statistics</strong> energy consumption datasets. ArcGIS was chosen because it allows for clear visualization and comparison of energy use patterns across counties and states.
+                            </div>
+                        </div>
                         <div class="detail-section">
                             <div class="detail-label">What I Found</div>
                             <div class="detail-text">Heating a house uses more energy than air conditioning.</div>
                         </div>
-
                         <div class="detail-section">
                             <div class="detail-label">What I Would Do Differently</div>
                             <div class="detail-text">I would probably change the color scheme of some of the maps.</div>
                         </div>
-
                         <div class="map-embed">
                             <arcgis-embedded-map style="height:350px;width:100%;" item-id="9e579c84cf41400d851768164394922c" theme="light" heading-enabled legend-enabled basemap-gallery-enabled time-zone-label-enabled center="-96.5704872693942,39.82192940946918" scale="36978595.474472" portal-url="https://tamu.maps.arcgis.com"></arcgis-embedded-map>
+                            <p style="color: #a0a0a0; margin-top: 8px;">
+                                This map displays county-level average residential energy consumption for heating and cooling across the United States, based on data from the US Bureau of Labor Statistics.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
         <section id="resume">
             <h2>Resume</h2>
             <div class="resume-section">
@@ -473,12 +484,11 @@
                 Geographic Information Science and Technology<br>
                 December 2026 | Cumulative GPA: 3.67<br>
                 Minor: Urban and Regional Planning</p>
-                
+
                 <p style="margin-top: 15px;"><strong>College of the Mainland</strong> — Texas City, TX<br>
                 Associate of Arts in General Studies<br>
                 August 2021 - May 2023 | Cumulative GPA: 3.85<br>
                 Honors: Phi Theta Kappa, Dean's Honors</p>
-
                 <h3>Technical Skills</h3>
                 <ul>
                     <li>ArcGIS Pro</li>
@@ -491,7 +501,6 @@
                     <li>Database Management</li>
                     <li>R</li>
                 </ul>
-
                 <h3>Relevant Coursework</h3>
                 <ul>
                     <li>Geodatabases</li>
@@ -504,7 +513,6 @@
                 </ul>
             </div>
         </section>
-
         <section id="contact">
             <h2 style="color: #64b5f6; margin-bottom: 30px;">Let's Connect</h2>
             <div class="contact-box">
@@ -521,7 +529,6 @@
             </div>
         </section>
     </div>
-
     <footer>
         <p>&copy; 2024 Emie McCoy. All rights reserved.</p>
     </footer>
